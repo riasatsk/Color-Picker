@@ -99,3 +99,41 @@ body {
 .tooltip:hover::after {
   opacity: 1;
 }
+@media only screen and (max-width: 768px) {
+  /* Define styles for mobile devices */
+
+  #main_pallet {  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pallet1,
+#pallet2,
+#pallet3,
+#pallet4,
+#pallet5,
+#pallet6 {
+  display: block;
+  margin: 0%;
+  padding: 0%;
+  height: 20%;
+  width: 100%;
+}
+.colorcode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 15px;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  margin-left: 60%;
+  margin-top: 22%;
+}
+
+}
