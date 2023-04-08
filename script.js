@@ -75,6 +75,7 @@ function changeColor() {
 document.body.addEventListener("keydown", function(event) {
     if (event.code === "Space") {
 changeColor();
+playAudioSpace()
     }
   });
   changeColor();
@@ -108,6 +109,11 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 // this function play the click sound
 function playAudio() {
   var audio = document.getElementById("myAudio");
+  audio.play();
+}
+function playAudioSpace() {
+  var audio = document.getElementById("myAudio");
+  audio.setAttribute("src","space.wav")
   audio.play();
 }
 
