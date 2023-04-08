@@ -92,6 +92,8 @@ changeColor();
     document.execCommand("copy");
     document.body.removeChild(input);
     pallet.firstElementChild.setAttribute("title","Copied")
+      playAudio();
+
   }
   
  // Check if the user is on a mobile device
@@ -103,5 +105,9 @@ if (window.matchMedia("(max-width: 768px)").matches) {
   alert.innerText = "Refresh the page to generate new color";
 }
   
-
+// this function play the click sound
+function playAudio() {
+  var audio = document.getElementById("myAudio");
+  audio.play();
+}
 
