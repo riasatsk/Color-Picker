@@ -94,7 +94,14 @@ changeColor();
     pallet.firstElementChild.setAttribute("title","Copied")
   }
   
- 
+ // Check if the user is on a mobile device
+if (window.matchMedia("(max-width: 768px)").matches) {
+  let alert = document.getElementById("alert");
+  // Select the element you want to change
+
+  // Change the inner text of the element
+  alert.innerText = "Refresh the page to generate new color";
+}
   
 
 
