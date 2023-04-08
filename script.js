@@ -109,7 +109,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 // this function play the click sound
 function playAudio() {
   var audio = document.getElementById("myAudio");
-  audio.setAttribute("src","audio.wav")
+  audio.setAttribute("src","click.wav")
   audio.play();
 }
 function playAudioSpace() {
